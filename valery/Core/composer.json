@@ -1,0 +1,23 @@
+{
+    "name": "dextrdevelopers/valerycore",
+    "description": "This is the core module for valery project.",
+    "type": "module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Angel Jimenez",
+            "email": "ajimenez@digitalcaribe.com.co"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "pestphp/pest": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
