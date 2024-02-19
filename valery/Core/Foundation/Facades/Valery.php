@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @method static array getAllModulesPaths()
  * @method static string getClassFullNameFromFile($filePathName)
+ * @method static array getAppsNames();
  *
  * @see \Valery\Core\Foundation\Valery
  */

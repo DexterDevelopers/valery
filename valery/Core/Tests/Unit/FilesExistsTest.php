@@ -10,7 +10,10 @@ it('test if Core files Exist', function (string $filename) {
     'valery/Core/Foundation/Valery.php',
     'valery/Core/Loaders/AliasesLoaderTrait.php',
     'valery/Core/Loaders/AutoLoaderTrait.php',
+    'valery/Core/Loaders/CommandsLoaderTrait.php',
     'valery/Core/Loaders/MigrationsLoaderTrait.php',
     'valery/Core/Loaders/ProvidersLoaderTrait.php',
     'valery/Core/Providers/CoreServiceProvider.php',
+    'valery/Core/Providers/ThemesServiceProvider.php',
+
 ]);

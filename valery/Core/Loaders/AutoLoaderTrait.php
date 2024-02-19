@@ -6,6 +6,7 @@ use Valery\Core\Foundation\Facades\Valery;
 
 trait AutoLoaderTrait
 {
+    use CommandsLoaderTrait;
     use ConfigsLoaderTrait;
     use MigrationsLoaderTrait;
     use ProvidersLoaderTrait;
@@ -17,10 +18,12 @@ trait AutoLoaderTrait
     {
 
         $this->loadMigrationsFromCore();
+        $this->loadCommandsFromCore();
 
         // Iterate over all the containers folders and autoload most of the components
         foreach (Valery::getAllModulesPaths() as $modulePath) {
             $this->loadMigrationsFromModules($modulePath);
+            $this->loadCommandsFromModule($modulePath);
         }
     }
 

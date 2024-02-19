@@ -65,7 +65,7 @@ class Valery
         return array_diff($sectionNames, ['Core', 'Apps']);
     }
 
-    private function getAppsNames(): array
+    public function getAppsNames(): array
     {
         $appsNames = [];
 
@@ -135,7 +135,7 @@ class Valery
             }
             $i++;
         }
-        if (!$namespace_ok) {
+        if (! $namespace_ok) {
             return null;
         }
 
