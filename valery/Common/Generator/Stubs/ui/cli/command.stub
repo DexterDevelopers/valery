@@ -1,0 +1,31 @@
+<?php
+
+namespace Valery\{{Section}}\{{Module}}\UI\CLI\Commands;
+
+use Valery\Core\Abstracts\Commands\AbstractConsoleCommand;
+
+/**
+ * Class {{Class}}Command.
+ * @package Valery\{{Section}}\{{Module}}\UI\CLI\Commands;
+ */
+class {{Class}}Command extends AbstractConsoleCommand
+{
+    /**
+     * The name and signature of the console command.
+     */
+    protected $signature = '{{signature}}';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = '{{description}}';
+
+    /**
+     * Execute the console command.
+     */
+    public function handle(): void
+    {
+    }
+}

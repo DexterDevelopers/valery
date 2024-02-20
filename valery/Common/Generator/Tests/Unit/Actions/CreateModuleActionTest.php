@@ -4,10 +4,9 @@ use Valery\Common\Generator\Actions\CreateModuleAction;
 use Valery\Common\Generator\Tasks\DeleteFolderTask;
 use Valery\Core\Foundation\Valery;
 
-
-it('test the creation of a module using action and its successfully', function(){
-    $section = "FAKE_SECTION";
-    $name = "FAKE_MODULE";
+it('test the creation of a module using action and its successfully', function () {
+    $section = 'FAKE_SECTION';
+    $name = 'FAKE_MODULE';
 
     $createModuleAction = app(CreateModuleAction::class);
 
@@ -17,9 +16,9 @@ it('test the creation of a module using action and its successfully', function()
 });
 
 // TODO : Performance this test in the future
-it('test the creation of a module using action and its error', function(){
-    $section = "FAKE_SECTION";
-    $name = "FAKE_MODULE";
+it('test the creation of a module using action and its error', function () {
+    $section = 'FAKE_SECTION';
+    $name = 'FAKE_MODULE';
 
     $createModuleAction = app(CreateModuleAction::class);
 

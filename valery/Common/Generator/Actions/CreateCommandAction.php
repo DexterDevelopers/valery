@@ -10,7 +10,8 @@ class CreateCommandAction extends AbstractAction
 {
     public function __construct(
         private CheckIfFolderExistTask $checkIfFolderExistTask,
-        private CreateFolderTask $createFolderTask
+        private CreateFolderTask $createFolderTask,
+        private CreateModuleAction $createModuleAction
     ) {
     }
 

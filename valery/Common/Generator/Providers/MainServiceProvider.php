@@ -21,8 +21,6 @@ class MainServiceProvider extends AbstractMainServiceProvider
     public function register(): void
     {
         parent::register();
-
-        $this->loadTheConsoles(base_path('valery/Common/Generator/Commands'));
     }
 
     /**

@@ -1,11 +1,17 @@
 <?php
 
-namespace Valery\Common\Generator\Commands;
+namespace Valery\Common\Generator\UI\CLI\Commands;
 
+use Illuminate\Contracts\Console\PromptsForMissingInput;
 use Valery\Common\Generator\Actions\CreateCommandAction;
 use Valery\Core\Abstracts\Commands\AbstractConsoleCommand;
 
-class CreateCommandCommand extends AbstractConsoleCommand
+/**
+ * Class CreateCommandCommand.
+ *
+ * @author Angel Jimenez Escobar <ajimenezescobar@gmail.com>
+ */
+class CreateCommandCommand extends AbstractConsoleCommand implements PromptsForMissingInput
 {
     /**
      * The name and signature of the console command.
@@ -24,5 +30,6 @@ class CreateCommandCommand extends AbstractConsoleCommand
      */
     public function handle(CreateCommandAction $action): void
     {
+
     }
 }

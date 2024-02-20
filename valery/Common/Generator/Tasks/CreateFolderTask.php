@@ -7,8 +7,6 @@ use Valery\Core\Abstracts\Tasks\AbstractTask;
 class CreateFolderTask extends AbstractTask
 {
     /**
-     *
-     * @param $folderPath
      * @return void
      */
     public function run($folderPath)
