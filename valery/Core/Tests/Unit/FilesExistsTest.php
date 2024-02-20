@@ -3,7 +3,7 @@
 const CORE_MODULE_DIRECTORY_NAME = 'valery/Core/';
 
 it('test if Core files Exist', function (string $filename) {
-    expect(CORE_MODULE_DIRECTORY_NAME . $filename)->toBeFile();
+    expect(CORE_MODULE_DIRECTORY_NAME.$filename)->toBeFile();
 })->with([
     'Abstracts/Commands/AbstractConsoleCommand.php',
     'Abstracts/Providers/AbstractMainServiceProvider.php',

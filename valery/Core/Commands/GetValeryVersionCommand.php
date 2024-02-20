@@ -10,19 +10,19 @@ class GetValeryVersionCommand extends AbstractConsoleCommand
     /**
      * The name and signature of the console command.
      */
-    protected $signature = "valery";
+    protected $signature = 'valery';
 
     /**
      * The console command description.
      */
-    protected $description = "Display the current Valery version.";
+    protected $description = 'Display the current Valery version.';
 
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function handle()
+    public function handle(): void
     {
         $this->info(Valery::VERSION);
     }

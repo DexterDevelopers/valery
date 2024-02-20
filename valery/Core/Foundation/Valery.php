@@ -8,7 +8,7 @@ class Valery
 {
     public const VERSION = '0.0.2';
 
-    private const MODULES_DIRECTORY_NAME = 'valery';
+    public const MODULES_DIRECTORY_NAME = 'valery';
 
     private const APPS_DIRECTORY_NAME = 'Apps';
 

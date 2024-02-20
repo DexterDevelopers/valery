@@ -41,11 +41,4 @@ trait CommandsLoaderTrait
     {
         return $consoleFile->getFilename() === 'closures.php';
     }
-    //
-    //    public function loadCommandsFromCore(): void
-    //    {
-    //        $coreCommandsDirectory = base_path(Valery::SHIP_CORE_PATH.'/Configs');
-    //        $this->loadTheConsoles($coreCommandsDirectory);
-    //    }
-
 }
