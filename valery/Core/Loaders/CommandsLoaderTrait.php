@@ -16,7 +16,7 @@ trait CommandsLoaderTrait
 
     public function loadCommandsFromCore(): void
     {
-        $shipMigrationDirectory = base_path(\Valery\Core\Foundation\Valery::SHIP_CORE_PATH.'/UI/CLI/Commands');
+        $shipMigrationDirectory = base_path(\Valery\Core\Foundation\Valery::SHIP_CORE_PATH.'/Commands');
         $this->loadTheConsoles($shipMigrationDirectory);
     }
 
@@ -27,7 +27,7 @@ trait CommandsLoaderTrait
 
             foreach ($files as $consoleFile) {
                 // Do not load route files
-                if (!$this->isRouteFile($consoleFile)) {
+                if (! $this->isRouteFile($consoleFile)) {
                     $consoleClass = Valery::getClassFullNameFromFile($consoleFile->getPathname());
                     // When user from the Main Service Provider, which extends Laravel
                     // service provider you get access to `$this->commands`

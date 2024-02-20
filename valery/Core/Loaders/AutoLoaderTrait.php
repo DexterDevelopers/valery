@@ -33,6 +33,7 @@ trait AutoLoaderTrait
 
         foreach (Valery::getAllModulesPaths() as $modulesPath) {
             $this->loadConfigsFromModule($modulesPath);
+            $this->loadOnlyMainProvidersFromModules($modulesPath);
         }
     }
 }
